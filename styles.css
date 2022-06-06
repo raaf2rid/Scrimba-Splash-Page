@@ -127,9 +127,10 @@ form{
 }
 
 .btn-style:focus{
-  width: 250px;
+  max-width: 250px;
+  width: 95%;
   transition: 0.5s;
-  cursor: pointer;
+
 }
 
 .submit:hover,
@@ -141,6 +142,7 @@ form{
   color: #FF713B;
   transition: 0.2s;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .footer{
