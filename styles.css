@@ -143,6 +143,7 @@ form{
   transition: 0.2s;
   box-sizing: border-box;
   cursor: pointer;
+  max-width: 220px;
 }
 
 .footer{
