@@ -53,7 +53,7 @@ span{
 .bg-image{
   background-image: url(bg.jpg);
   background-size: cover;
-  background-position: 0%;
+  background-position: center;
 }
 
 header{
@@ -82,6 +82,7 @@ section{
 
 section h1{
   font-size: 1.3125rem;
+  margin: 0 0.5em;
 }
 
 section h2{
@@ -95,7 +96,7 @@ section p{
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.6);
   padding: 0 1.5em 1.5em 1.5em;
-  max-width: 320px;
+  max-width: 420px;
   margin: 0 auto;
 }
 
@@ -114,6 +115,7 @@ form{
   border: 1px solid grey;
   border-radius: 8px;
   box-sizing: border-box;
+  transition: 0.5s;
 }
 
 .submit{
@@ -123,27 +125,21 @@ form{
   font-weight: 900;
   color: #fff;
   border: none;
-
+  transform: scale(1);
+  transition: 0.5s;
 }
 
 .btn-style:focus{
   max-width: 250px;
   width: 95%;
-  transition: 0.5s;
-
+  outline: none;
 }
 
 .submit:hover,
 .submit:focus{
-  background: white;
-  border: 1px solid;
-  border-radius: 8px;
-  border-image-slice: 5%;
-  color: #FF713B;
-  transition: 0.2s;
-  box-sizing: border-box;
+  transform: scale(1.1);
   cursor: pointer;
-  max-width: 220px;
+  outline: none;
 }
 
 .footer{
@@ -161,7 +157,7 @@ form{
     flex-direction: row;
     width: 50%;
     justify-content: flex-end;
-    height: 90vh;
+    min-height: 100vh;
   }
 
   .bg-image{
